@@ -64,13 +64,13 @@ RNA transcripts are mapped to the genome twice. First to look for genes and then
 
 #### MethylationConcordanceScoring.pl
 * scores concordance of 5mCpG as in Bismark:https://github.com/FelixKrueger/Bismark/tree/master/Docs#x-concordance-of-methylation-calls-across-bisulfite-reads
-*Argument 0 = Mapped deduplicated sam file from Bismark
-*Argument 1 = Barcode list
-*Argument 2 = UMI length (typically = 4)
-*Argument 3 = SpikeInFlag (typically = 2, genome only)
-*Argument 4 = Number of CpGs needed on a single read (typically = 5)
-*Argument 5 = Percent threshold to call read as fully methylated (typically = 90)
-*Argument 6 = Percent threshold to call read as fully unmethylated (typically = 10)
+* Argument 0 = Mapped deduplicated sam file from Bismark
+* Argument 1 = Barcode list
+* Argument 2 = UMI length (typically = 4)
+* Argument 3 = SpikeInFlag (typically = 2, genome only)
+* Argument 4 = Number of CpGs needed on a single read (typically = 5)
+* Argument 5 = Percent threshold to call read as fully methylated (typically = 90)
+* Argument 6 = Percent threshold to call read as fully unmethylated (typically = 10)
 
 #### Pullout-scMethylationFromBismarkMethylationExtractor_wReadNames.pl
 * Reformats the Bismark Methylation Extractor format to demultiplex by cell barcode and UMI.
