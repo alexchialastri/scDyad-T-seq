@@ -56,10 +56,10 @@ RNA transcripts are mapped to the genome twice. First to look for genes and then
 #### 
 ## How to use each script
 scCpGDiad_Trim_and_ExtractBarcodes_se-HammingCorrection_TransferToR2.pl - Used to identify reads with the proper PCR sequence "GGTGTAGTGGGTTTGG" and proper barcodes. Also concatenates the UMI and cell barcode to the read name for read1 and 2
-*Argument 0 = Barcode list
-*Argument 1 = Read 1 Input Fastq file
-*Argument 2 = UMI length (Typically 4 for most experiments performed in manuscript)
-*Argument 3 = Read 2 Input Fastq file
+* Argument 0 = Barcode list
+* Argument 1 = Read 1 Input Fastq file
+* Argument 2 = UMI length (Typically 4 for most experiments performed in manuscript)
+* Argument 3 = Read 2 Input Fastq file
 
 MethylationConcordanceScoring.pl -
 *Argument 0 = Mapped deduplicated sam file from Bismark
