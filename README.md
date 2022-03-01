@@ -56,7 +56,7 @@ RNA transcripts are mapped to the genome twice. First to look for genes and then
 #### 
 ## How to use each script
 #### scCpGDiad_Trim_and_ExtractBarcodes_se-HammingCorrection_TransferToR2.pl 
-* Used to identify reads with the proper PCR sequence "GGTGTAGTGGGTTTGG" and proper barcodes. Also concatenates the UMI and cell barcode to the read name for read1 and 2
+* Used to identify reads with the proper PCR sequence "GGTGTAGTGGGTTTGG" and proper barcodes. Also concatenates the UMI and cell barcode to the read name for read 1 and 2
 * Argument 0 = Barcode list
 * Argument 1 = Read 1 Input Fastq file
 * Argument 2 = UMI length (Typically 4 for most experiments performed in manuscript)
@@ -112,7 +112,7 @@ RNA transcripts are mapped to the genome twice. First to look for genes and then
 * Argument 2 = UMI length (Typically 4 for most experiments performed in manuscript)
 
 #### process_scCpGDiadwithQC.pl
-* Searches the genome location of mapped reads to identify fully or hemi-methylated CpG or CpH sites. Also detects all 5mC calls inferred by the cutting action of MspJI.
+* Searches the genome location of mapped reads to identify fully or hemi-methylated CpG or CpHpG sites. Also detects all 5mC calls inferred by the cutting action of MspJI.
 * Argument 0 = Genome used for mapping (non bisulfite converted)
 * Argument 1 = Mapped deduplicated sam file from Bismark
 * Argument 2 = Cell barcodes used for M-M-Dyad-seq, M-H-Dyad-seq or scDyad-seq.
