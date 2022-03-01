@@ -54,21 +54,21 @@ RNA transcripts are mapped to the genome twice. First to look for genes and then
 
 
 #### 
-#### How to use each script
+## How to use each script
 scCpGDiad_Trim_and_ExtractBarcodes_se-HammingCorrection_TransferToR2.pl - Used to identify reads with the proper PCR sequence "GGTGTAGTGGGTTTGG" and proper barcodes. Also concatenates the UMI and cell barcode to the read name for read1 and 2
-Argument 0 = Barcode list
-Argument 1 = Read 1 Input Fastq file
-Argument 2 = UMI length (Typically 4 for most experiments performed in manuscript)
-Argument 3 = Read 2 Input Fastq file
+*Argument 0 = Barcode list
+*Argument 1 = Read 1 Input Fastq file
+*Argument 2 = UMI length (Typically 4 for most experiments performed in manuscript)
+*Argument 3 = Read 2 Input Fastq file
 
 MethylationConcordanceScoring.pl -
-Argument 0 = Mapped deduplicated sam file from Bismark
-Argument 1 = Barcode list
-Argument 2 = UMI length (typically = 4)
-Argument 3 = SpikeInFlag (typically = 2, genome only)
-Argument 4 = Number of CpGs needed on a single read (typically = 5)
-Argument 5 = Percent threshold to call read as fully methylated (typically = 90)
-Argument 6 = Percent threshold to call read as fully unmethylated (typically = 10)
+*Argument 0 = Mapped deduplicated sam file from Bismark
+*Argument 1 = Barcode list
+*Argument 2 = UMI length (typically = 4)
+*Argument 3 = SpikeInFlag (typically = 2, genome only)
+*Argument 4 = Number of CpGs needed on a single read (typically = 5)
+*Argument 5 = Percent threshold to call read as fully methylated (typically = 90)
+*Argument 6 = Percent threshold to call read as fully unmethylated (typically = 10)
 
 Pullout-scMethylationFromBismarkMethylationExtractor_wReadNames.pl - Reformats the Bismark Methylation Extractor format to demultiplex by cell barcode and UMI.
 Argument 0 = Bismark Methylation Extractor text file. There are 8 options. [CpG_OB_*txt, CpG_CTOB_*txt, CpG_OT_*txt, CpG_CTOT_*txt, Non_CpG_OB_*txt, Non_CpG_CTOB_*txt, Non_CpG_OT_*txt, Non_CpG_CTOT_*txt]. Run this script on each of the Bismark Methylation Extractor output files.
